@@ -8,9 +8,11 @@
     "start": "cross-env VERSION=${VERSION:-localversion} parcel  ./src/index.html",
     "clean:dist": "rimraf dist",
     "prebuild": "run-s lint clean:dist",
-    "build": "parcel build --public-url  ./src/index.html ./src/robots.txt ./src/sitemap.xml",
-    "postbuild": "PUBLIC_URL= react-snap",
-    "preserve": "npm run build"
+    "build": "parcel build --public-url deplacement-covid-19-covid-19-attestation.apps.ocp4-demo.getechdev.com/deplacement-covid-19 ./src/index.html ./src/robots.txt ./src/sitemap.xml",
+    "postbuild": "PUBLIC_URL=deplacement-covid-19-covid-19-attestation.apps.ocp4-demo.getechdev.com/deplacement-covid-19 react-snap",
+    "preserve": "npm run build",
+    "serve": "serve dist",
+    "serve:dist": "serve dist"
   },
   "repository": {
     "type": "git",
