@@ -10,9 +10,7 @@
     "prebuild": "run-s lint clean:dist",
     "build": "parcel build --public-url getechdev.com/deplacement-covid-19 ./src/index.html ./src/robots.txt ./src/sitemap.xml",
     "postbuild": "PUBLIC_URL=getechdev.com/deplacement-covid-19 react-snap",
-    "preserve": "npm run build",
-    "serve": "serve dist",
-    "serve:dist": "serve dist"
+    "preserve": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -73,6 +71,9 @@
     "strategy": "default",
     "clearDist": false,
     "templatedURLs": {
-      "./": ["index.html"]
-  }  }
+      "./": [
+        "index.html"
+      ]
+    }
+  }
 }
